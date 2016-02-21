@@ -1,1 +1,1 @@
-EC-CUBE UWP Application Sample
+# EC-CUBE UWP Application Sample
