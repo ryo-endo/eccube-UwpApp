@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="eccube_UwpApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eccube_UwpApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <WebView x:Name="webView"/>
+        <Grid Grid.Row="1" IsDoubleTapEnabled="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <AppBarButton x:Name="appBarButtonHome" HorizontalAlignment="Stretch" Label="Home" VerticalAlignment="Stretch" Width="60" Margin="0" Click="appBarButtonHome_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/TabIcons/tab_home.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="appBarButtonMyPage" HorizontalAlignment="Stretch" Label="マイページ" Margin="0" VerticalAlignment="Stretch" Grid.Column="1" Width="60" Click="appBarButtonMyPage_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/TabIcons/tab_user.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="appBarButtonProductList" HorizontalAlignment="Stretch" Label="商品一覧" Margin="0" VerticalAlignment="Stretch" Grid.Column="2" Width="60" Click="appBarButtonProductList_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/TabIcons/tab_list.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="appBarButtonCart" HorizontalAlignment="Stretch" Label="カート" Margin="0" VerticalAlignment="Stretch" Grid.Column="3" Width="60" Click="appBarButtonCart_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/TabIcons/tab_cart.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="appBarButtonFavorite" HorizontalAlignment="Stretch" Label="お気に入り" VerticalAlignment="Stretch" Width="60" Margin="0" Grid.Column="4" Click="appBarButtonFavorite_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/TabIcons/tab_favorite.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </Grid>
+
+    </Grid>
+</Page>

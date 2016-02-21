@@ -1,0 +1,1 @@
+MainPackage=d:\documents\visual studio 2015\Projects\eccube-UwpApp\eccube-UwpApp\bin\x86\Release\eccube-UwpApp_1.0.1.0_x86.appx
